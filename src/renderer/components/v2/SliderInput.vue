@@ -18,12 +18,12 @@ const handleMouseScroll = (e: WheelEvent) => {
 
 <template>
   <base-chip color="accent">
-    <p class="text-11px font-weight-user-defined lowercase">
+    <p class="text-11px font-weight-user-defined">
       <span class="opacity-75">{{ prefix }}</span> {{ value }} <span class="opacity-75">{{ suffix }}</span>
     </p>
   </base-chip>
   <div
-    class="slider py-3"
+    class="slider py-3 min-w-160px max-w-160px"
     @wheel.prevent="handleMouseScroll"
   >
     <slider
